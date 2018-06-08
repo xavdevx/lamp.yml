@@ -11,7 +11,7 @@
       when: ansible_os_family == 'RedHat'
       
     - name: redemarage des services 
-      shell: systemctl restart http mariadb && systemctl enable http mariadb
+      shell: systemctl restart httpd mariadb && systemctl enable httpd mariadb
       when: ansible_os_family == 'RedHat'
      
      -name: redemarage des services debian ubuntun
