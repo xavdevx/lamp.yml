@@ -2,7 +2,7 @@
   tasks: 
     - name: LAMP installation Debian/Ubuntu
       apt: name={{item}} state=present
-      with_items: '{{lamp_packages_seb}}'
+      with_items: '{{lamp_packages_deb}}'
       when: ansible_os_family == 'Debian'
     
     - name: LAMP installation Centos/Redhat
